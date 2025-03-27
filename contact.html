@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatact - Local Business</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Home</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone"><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section><br>
+        <section>
+            <figure>
+                <img src="thankyou.png" alt="Local Business" title="Home Page" width="800" height="500">
+            </figure>
+        </section>
+        <p class="center">
+            <a href="#">Back To Top</a>
+        </p>
+    </main>
+    <footer>
+        <span class="nowrap">&copy; <time id="year"></time> Local Business. All rights reserved.</span> 
+    </footer>
+</body>
+</html>

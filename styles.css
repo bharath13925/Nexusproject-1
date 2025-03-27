@@ -1,0 +1,391 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADER-BGCOLOR: #000;
+    --HEADER-COLOR: #fff;
+    --PADDING-TB: 0.25em;
+    --PADDING-SIDE: 2.5%;
+    --NAV-BGCOLOR: #fff;
+    --BORDER-COLOR: #333;
+    --BORDERS: 1px solid var(--BORDER-COLOR);
+    --BORDER-RADIUS: 15px;
+    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
+    --HERO-COLOR: #fff;
+    --BG-COLOR: #fff;
+    --CARD-BGCOLOR: #ffffff;
+    --FOOTER-BGCOLOR: #222;
+    --BUTTON-BGCOLOR: #007bff;
+    --BUTTON-HOVER: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--BG-COLOR);
+    color: var(--BORDER-COLOR);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color:var(--BUTTON-BGCOLOR);
+    color: var(--HERO-COLOR);
+    
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--HEADER-BGCOLOR);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--HEADER-COLOR);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+/* image content */
+section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+figure img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section figure img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+/* about Us section */
+.about-intro, .our-values, .why-choose-us {
+    background:var(--HERO-COLOR);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.about-intro h2, .our-values h2, .why-choose-us h2 {
+    color: #004080;
+    text-align: center;
+}
+/* about page styling */
+.our-values ul, .why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+.our-values li, .why-choose-us li {
+    background: #e6f2ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #004080;
+    font-size: 16px;
+}
+/* customer Testimonals*/
+.testimonials {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    width: 60%;
+    color: #555;
+}
+
+.testimonials cite {
+    font-weight: bold;
+    color: #333;
+}
+section figure img:hover{
+    transform:scale(1.05) /* means the image is enlarges the 105% of its original size in 0.3second because in above it is transform only 0.3seconds only */
+}
+section figure p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--BORDER-COLOR);
+    max-width: 90%;
+
+}
+/* Services Section */
+.service-box {
+    background: var(--CARD-BGCOLOR);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box h3 {
+    color: var(--BUTTON-BGCOLOR);
+    margin-bottom: 10px;
+}
+
+/* Contact Page */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--CARD-BGCOLOR);
+    border-radius: var(--BORDER-RADIUS);
+}
+section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--BUTTON-BGCOLOR);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form {
+    background: var(--HEADER-COLOR);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--HEADER-COLOR);
+    border-radius: 5px;
+}
+
+form button {
+    background: var(--BUTTON-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: var(--BUTTON-HOVER);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--FOOTER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer span {
+    display: block;
+    margin-top: 5px;
+}
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center a {
+    display: inline-block;
+    background-color: var(--BUTTON-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.center a:hover {
+    background-color: var(--BUTTON-HOVER);
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h1::before {
+        content: '📞 ';
+    }
+
+    header h1::after {
+        content: ' 📞';
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+}
+/* Fade-in animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, .service-box, .testimonials, form {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Button hover animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+form button:hover, .center a:hover {
+    animation: pulse 0.3s ease-in-out;
+}
+
+/* Image hover animation */
+@keyframes popOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+section figure img:hover {
+    animation: popOut 0.3s ease-in-out;
+}
+
+/* Slide-in effect for navigation links */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    opacity: 0;
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.1s; }
+nav ul li:nth-child(2) { animation-delay: 0.2s; }
+nav ul li:nth-child(3) { animation-delay: 0.3s; }
+nav ul li:nth-child(4) { animation-delay: 0.4s; }
+
+/* Header animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: slideDown 0.6s ease-in-out;
+}
+
+/* Footer fade-in effect */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: fadeUp 0.8s ease-in-out;
+}
